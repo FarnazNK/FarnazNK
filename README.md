@@ -17,7 +17,6 @@ Backend and AI Engineer building reliable APIs, secure services, data platforms,
 - [RAG Agent](https://github.com/FarnazNK/rag-agent) - FastAPI service for a production-style RAG agent with LangGraph, hybrid retrieval, evaluation, guardrails, async batching, and Prometheus metrics.
 - [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce) - Secure FastAPI backend with JWT authentication, RBAC, rate limiting, Stripe integration, and a React/TypeScript client.
 - [FinVision](https://github.com/FarnazNK/finvision) - React and TypeScript wealth-management dashboard with Redux state management, real-time portfolio insights, holdings, transactions, watchlists, and Jest tests.
-- [Event Analytics Platform](https://github.com/FarnazNK/event-analytics-platform) - Real-time event processing with OAuth 2.0, PostgreSQL, Redis, caching, monitoring, audit logging, and Docker deployment.
 
 ## Connect
 
