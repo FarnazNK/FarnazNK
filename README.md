@@ -1,6 +1,6 @@
 # Farnaz Nasehi
 
-**Backend & AI Engineer** building production-oriented APIs, retrieval systems, and data-backed applications with Python, FastAPI, PostgreSQL, and modern LLM tooling.
+**Backend & AI Engineer** building production-oriented APIs, retrieval systems, and data-backed applications with Python, FastAPI, Node.js, PostgreSQL, and modern LLM tooling.
 
 I focus on backend architecture, applied AI, reliability, evaluation, security, and observability — systems that are designed to be tested, measured, and operated rather than just demonstrated.
 
@@ -34,7 +34,7 @@ AI-assisted financial platform combining a **FastAPI backend, PostgreSQL-compati
 
 ## Core Stack
 
-**Backend:** Python, FastAPI, SQLAlchemy, PostgreSQL, Redis, REST APIs  
+**Backend:** Python, FastAPI, Node.js, Express, SQLAlchemy, PostgreSQL, Redis, REST APIs  
 **AI:** RAG, LangGraph, pgvector, hybrid retrieval, LLM evaluation, guardrails  
 **Infrastructure:** Docker, Docker Compose, Terraform, GitHub Actions  
 **Observability:** Prometheus, Grafana, structured logging  
