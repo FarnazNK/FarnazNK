@@ -9,7 +9,7 @@ I focus on backend architecture, applied AI, reliability, evaluation, security, 
 ### [RAG Agent](https://github.com/FarnazNK/rag-agent)
 **Live:** [API Docs](https://rag-agent-api-2uau.onrender.com/docs) · [Health](https://rag-agent-api-2uau.onrender.com/health/live)
 
-Production-style multi-tenant RAG API built with **FastAPI, PostgreSQL/pgvector, LangGraph, Docker, Prometheus, Grafana, and Terraform**.
+Production-style multi-tenant RAG API built with **FastAPI, PostgreSQL/pgvector, AWS Lambda/SAM, LangGraph, Docker, Prometheus, Grafana, and Terraform**.
 
 - Hybrid dense + lexical retrieval with reciprocal-rank fusion
 - JWT authentication and workspace-scoped authorization
@@ -42,7 +42,7 @@ AI-assisted financial platform combining a **FastAPI backend, PostgreSQL-compati
 
 **Backend:** Python, FastAPI, Node.js, Express, SQLAlchemy, PostgreSQL, Redis, REST APIs  
 **AI:** RAG, LangGraph, pgvector, hybrid retrieval, LLM evaluation, guardrails  
-**Infrastructure:** Docker, Docker Compose, Terraform, GitHub Actions  
+**Infrastructure:** AWS Lambda, AWS SAM, CloudWatch, Docker, Docker Compose, Terraform, GitHub Actions  
 **Observability:** Prometheus, Grafana, structured logging  
 **Frontend:** TypeScript, React
 
