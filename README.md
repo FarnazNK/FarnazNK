@@ -7,7 +7,7 @@ I focus on backend architecture, applied AI, reliability, evaluation, security, 
 ## Featured Projects
 
 ### [RAG Agent](https://github.com/FarnazNK/rag-agent)
-**Live:** [API Docs](https://rag-agent-api-2uau.onrender.com/docs) · [Health](https://rag-agent-api-2uau.onrender.com/health/live)
+**Live:** [API Live](https://rag-agent-api-2uau.onrender.com/) · [API Docs](https://rag-agent-api-2uau.onrender.com/docs) · [Health](https://rag-agent-api-2uau.onrender.com/health/live)
 
 Production-style multi-tenant RAG API built with **FastAPI, PostgreSQL/pgvector, AWS Lambda/SAM, LangGraph, Docker, Prometheus, Grafana, and Terraform**.
 
@@ -18,7 +18,7 @@ Production-style multi-tenant RAG API built with **FastAPI, PostgreSQL/pgvector,
 - Guardrails, structured logging, metrics, and documented production trade-offs
 
 ### [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce)
-**Live:** [Storefront](https://secureshop-l35h.onrender.com) · [Products API](https://secureshop-api-zckt.onrender.com/api/v1/products) · [API Health](https://secureshop-api-zckt.onrender.com/api/v1/health)
+**Live:** [Storefront](https://secureshop-l35h.onrender.com) · [API Live](https://secureshop-api-zckt.onrender.com/) · [Products API](https://secureshop-api-zckt.onrender.com/api/v1/products) · [API Health](https://secureshop-api-zckt.onrender.com/api/v1/health)
 
 Security-focused backend application demonstrating **FastAPI, PostgreSQL, Redis, JWT authentication, RBAC, rate limiting, Stripe integration, and Docker**.
 
@@ -28,7 +28,7 @@ Security-focused backend application demonstrating **FastAPI, PostgreSQL, Redis,
 - Automated tests and CI against real infrastructure services
 
 ### [FinVision](https://github.com/FarnazNK/finvision)
-**Live:** [Dashboard](https://farnaznk.github.io/finvision/) · [API Health](https://finvision-api.onrender.com/health) · [API Docs](https://finvision-api.onrender.com/docs)
+**Live:** [Dashboard](https://farnaznk.github.io/finvision/) · [API Live](https://finvision-api.onrender.com/) · [API Health](https://finvision-api.onrender.com/health) · [API Docs](https://finvision-api.onrender.com/docs)
 
 AI-assisted financial platform combining a **FastAPI backend, PostgreSQL-compatible persistence, portfolio analytics, AI research workflows, and a React/TypeScript frontend**.
 
