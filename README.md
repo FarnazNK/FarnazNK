@@ -5,8 +5,6 @@
 I focus on backend architecture, applied AI, reliability, evaluation, security, and observability — systems that are designed to be tested, measured, and operated rather than just demonstrated.
 
 
-> **Live demo note:** the APIs use Render's free hosting tier, so the first request after inactivity can take roughly 30–60 seconds while a service wakes. The repositories, tests, architecture, and documentation are available immediately.
-
 ## Featured Projects
 
 ### [RAG Agent](https://github.com/FarnazNK/rag-agent)
