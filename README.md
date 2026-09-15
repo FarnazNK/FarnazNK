@@ -36,7 +36,7 @@ A production-oriented AI systems project with two complementary surfaces:
 - Hybrid dense + lexical retrieval with reciprocal-rank fusion
 - PostgreSQL + pgvector
 - JWT authentication and workspace-scoped authorization
-- Prompt-injection checks and output/citation validation
+- Deterministic first-pass prompt-injection screening plus output/citation validation
 - RAG quality and adversarial evaluation gates
 - Prometheus metrics, Grafana dashboards, and structured logging
 - Docker, Terraform, AWS Lambda/SAM, and GitHub Actions
