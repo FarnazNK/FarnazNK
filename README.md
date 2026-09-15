@@ -4,9 +4,6 @@
 
 I focus on backend architecture, applied AI, reliability, evaluation, security, and observability — systems that are designed to be tested, measured, and operated rather than just demonstrated.
 
-## Recruiter Quick Tour
-
-If you have a few minutes, start with **RAG Agent** for retrieval and AI-system design, **SecureShop** for security-focused backend engineering, and **FinVision** for a complete API + data + frontend product. Each project includes automated tests, CI, production-oriented configuration, and clear API entry points.
 
 > **Live demo note:** the APIs use Render's free hosting tier, so the first request after inactivity can take roughly 30–60 seconds while a service wakes. The repositories, tests, architecture, and documentation are available immediately.
 
