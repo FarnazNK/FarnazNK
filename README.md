@@ -4,21 +4,22 @@
 
 I build backend platforms and AI systems with **Python, TypeScript, FastAPI, PostgreSQL, Redis, Docker, AWS, and LLM tooling**.
 
-Main areas: **agentic systems, RAG, context engineering, developer tooling, evaluation, security, and observability**.
+Main areas: **grounded agents, context engineering, retrieval, tool use, evaluation, guardrails, security, and observability**.
 
 ## Featured Projects
 
-### [RAG Agent — Retrieval + Developer Agent Platform](https://github.com/FarnazNK/rag-agent)
+### [Grounded Agent Platform — Retrieval, Tools, Evals & Guardrails](https://github.com/FarnazNK/rag-agent)
 
 [API](https://rag-agent-api-2uau.onrender.com/) · [Docs](https://rag-agent-api-2uau.onrender.com/docs) · [Health](https://rag-agent-api-2uau.onrender.com/health/live)
 
-Multi-tenant RAG API plus a repository-aware developer-agent harness.
+Production-oriented grounded-agent system combining retrieval, constrained tool use, evaluation, verification, and observability.
 
-- Hybrid dense + lexical retrieval with **PostgreSQL/pgvector**
-- JWT auth, workspaces, tenant isolation, citations, and eval gates
-- Repository context selection, tool execution, reusable skills, and verification
-- Explicit tool policies, sensitive-file filtering, structured traces, and CI checks
-- Docker, Terraform, AWS Lambda/SAM, Prometheus, and Grafana
+- Repository-aware developer agent with bounded context selection and reusable skills
+- Policy-controlled tools for code search, file operations, and verification commands
+- Multi-tenant grounded retrieval with **PostgreSQL/pgvector**, lexical search, and hybrid ranking
+- Explicit write opt-in, sensitive-path protection, prompt/context/output guardrails, and citation validation
+- Dedicated RAG, adversarial, developer-agent context, and latency evaluation gates in CI
+- Structured traces, Prometheus/Grafana observability, Docker, Terraform, and AWS deployment paths
 
 ### [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce)
 
@@ -44,7 +45,7 @@ Full-stack financial platform with **React/TypeScript + FastAPI**.
 ## Core Stack
 
 **Backend:** Python, FastAPI, Node.js, SQLAlchemy, PostgreSQL, Redis  
-**AI:** RAG, pgvector, tool-calling agents, context engineering, LLM evals, guardrails  
+**AI:** grounded agents, tool calling, context engineering, hybrid retrieval, pgvector, LLM evals, guardrails  
 **Infrastructure:** Docker, AWS Lambda/SAM, Terraform, GitHub Actions, Prometheus, Grafana  
 **Frontend:** TypeScript, React
 
