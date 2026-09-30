@@ -21,26 +21,27 @@ Production-oriented grounded-agent system combining retrieval, constrained tool 
 - Dedicated RAG, adversarial, developer-agent context, and latency evaluation gates in CI
 - Structured traces, Prometheus/Grafana observability, Docker, Terraform, and AWS deployment paths
 
-### [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce)
-
-[Storefront](https://secureshop-l35h.onrender.com) · [API](https://secureshop-api-zckt.onrender.com/)
-
-Security-focused FastAPI e-commerce backend.
-
-- PostgreSQL, Redis, JWT, RBAC, Stripe
-- Refresh-token rotation and reuse detection
-- Rate limiting, service-layer architecture, automated tests, Docker, and CI
-
-### [FinVision](https://github.com/FarnazNK/finvision)
+### [FinVision — AI-Assisted Portfolio Intelligence](https://github.com/FarnazNK/finvision)
 
 [Dashboard](https://farnaznk.github.io/finvision/) · [API](https://finvision-api.onrender.com/) · [Docs](https://finvision-api.onrender.com/docs)
 
-Full-stack financial platform with **React/TypeScript + FastAPI**.
+Portfolio intelligence system that applies grounded AI to authenticated financial data instead of treating the LLM as the source of calculations.
 
-- JWT-authenticated portfolio APIs with PostgreSQL persistence
-- Portfolio analytics and AI-assisted insights
-- Document research with citations
-- Dockerized frontend/backend and CI/CD
+- Deterministic portfolio analytics exposed as tools for AI-assisted insights
+- Document-grounded research with ranked evidence and source citations
+- FastAPI services for JWT auth, PostgreSQL portfolio state, market-data adapters, AI orchestration, and retrieval
+- Optional Anthropic and Finnhub integrations with deterministic/offline fallbacks
+- React/TypeScript product surface, Dockerized services, automated tests, and CI/CD
+
+### [SecureShop — Security-Focused Backend](https://github.com/FarnazNK/secureshop-ecommerce)
+
+[Storefront](https://secureshop-l35h.onrender.com) · [API](https://secureshop-api-zckt.onrender.com/)
+
+Production-style FastAPI e-commerce system demonstrating backend security and transactional design.
+
+- PostgreSQL, async SQLAlchemy, JWT/RBAC, refresh-token rotation, and reuse detection
+- Rate limiting, security headers, explicit CORS, request IDs, and centralized errors
+- Numeric money handling, order snapshots, Docker, integration tests, and CI
 
 ## Core Stack
 
