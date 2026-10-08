@@ -35,7 +35,7 @@ Portfolio intelligence system that applies grounded AI to authenticated financia
 
 ### [SecureShop — Security-Focused Backend](https://github.com/FarnazNK/secureshop-ecommerce)
 
-[Storefront](https://secureshop-l35h.onrender.com) · [Live API](https://secureshop-api-zckt.onrender.com/api/v1/products)
+[Storefront](https://secureshop-l35h.onrender.com) · [Live API](https://secureshop-api-zckt.onrender.com/api/reference)
 
 Production-style FastAPI e-commerce system demonstrating backend security and transactional design.
 
