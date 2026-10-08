@@ -10,7 +10,7 @@ Main areas: **grounded agents, context engineering, retrieval, tool use, evaluat
 
 ### [Grounded Agent Platform — Retrieval, Tools, Evals & Guardrails](https://github.com/FarnazNK/grounded-agent-platform)
 
-[API](https://rag-agent-api-2uau.onrender.com/) · [Docs](https://rag-agent-api-2uau.onrender.com/docs) · [Health](https://rag-agent-api-2uau.onrender.com/health/live)
+[Live API](https://rag-agent-api-2uau.onrender.com/docs) · [Docs](https://rag-agent-api-2uau.onrender.com/docs) · [Health](https://rag-agent-api-2uau.onrender.com/health/live)
 
 Production-oriented grounded-agent system combining retrieval, constrained tool use, evaluation, verification, and observability.
 
@@ -23,7 +23,7 @@ Production-oriented grounded-agent system combining retrieval, constrained tool 
 
 ### [FinVision — AI-Assisted Portfolio Intelligence](https://github.com/FarnazNK/finvision)
 
-[Dashboard](https://farnaznk.github.io/finvision/) · [API](https://finvision-api.onrender.com/) · [Docs](https://finvision-api.onrender.com/docs)
+[Dashboard](https://farnaznk.github.io/finvision/) · [Live API](https://finvision-api.onrender.com/docs) · [Docs](https://finvision-api.onrender.com/docs)
 
 Portfolio intelligence system that applies grounded AI to authenticated financial data instead of treating the LLM as the source of calculations.
 
@@ -35,7 +35,7 @@ Portfolio intelligence system that applies grounded AI to authenticated financia
 
 ### [SecureShop — Security-Focused Backend](https://github.com/FarnazNK/secureshop-ecommerce)
 
-[Storefront](https://secureshop-l35h.onrender.com) · [API](https://secureshop-api-zckt.onrender.com/)
+[Storefront](https://secureshop-l35h.onrender.com) · [Live API](https://secureshop-api-zckt.onrender.com/api/v1/products)
 
 Production-style FastAPI e-commerce system demonstrating backend security and transactional design.
 
