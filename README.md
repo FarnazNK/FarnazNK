@@ -28,10 +28,10 @@ Production-oriented grounded-agent system combining retrieval, constrained tool 
 Portfolio intelligence system that applies grounded AI to authenticated financial data instead of treating the LLM as the source of calculations.
 
 - Deterministic portfolio analytics exposed as tools for AI-assisted insights
-- Document-grounded research with ranked evidence and source citations
+- Document-retrieval prototype with ranked evidence and source citations
 - FastAPI services for JWT auth, PostgreSQL portfolio state, market-data adapters, AI orchestration, and retrieval
 - Optional Anthropic and Finnhub integrations with deterministic/offline fallbacks
-- React/TypeScript product surface, Dockerized services, automated tests, and CI/CD
+- React/TypeScript product surface, Dockerized services, automated tests, and GitHub Actions CI
 
 ### [SecureShop — Security-Focused Backend](https://github.com/FarnazNK/secureshop-ecommerce)
 
