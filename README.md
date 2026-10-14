@@ -2,9 +2,11 @@
 
 ## Backend & AI Systems Engineer
 
-I build backend platforms and AI systems with **Python, TypeScript, FastAPI, PostgreSQL, Redis, Docker, AWS, and LLM tooling**.
+I build **secure backend services and grounded AI applications**, from authenticated APIs and databases to retrieval, tool use, evaluations, and observability.
 
-Main areas: **grounded agents, context engineering, retrieval, tool use, evaluation, guardrails, security, and observability**.
+**Focus:** Backend engineering · Applied AI/LLMs · Cloud infrastructure
+
+[Featured work](#featured-projects) · [Skills](#technical-skills) · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
 ## Featured Projects
 
@@ -43,13 +45,13 @@ Production-style FastAPI e-commerce system demonstrating backend security and tr
 - Rate limiting, security headers, explicit CORS, request IDs, and centralized errors
 - Numeric money handling, order snapshots, Docker, integration tests, and CI
 
-## Core Stack
+## Technical Skills
 
-**Backend:** Python, FastAPI, Node.js, SQLAlchemy, PostgreSQL, Redis  
-**AI:** grounded agents, tool calling, context engineering, hybrid retrieval, pgvector, LLM evals, guardrails  
-**Infrastructure:** Docker, AWS Lambda/SAM, Terraform, GitHub Actions, Prometheus, Grafana  
-**Frontend:** TypeScript, React
+| Focus | Technologies |
+| --- | --- |
+| **Backend** | Python, FastAPI, Django, Django REST Framework, Node.js, SQLAlchemy, PostgreSQL, MySQL, Redis |
+| **AI & LLMs** | Grounded agents, tool calling, context engineering, hybrid retrieval, pgvector, LLM evaluations, guardrails |
+| **Cloud & DevOps** | Docker, AWS Lambda/SAM, Terraform, GitHub Actions, Prometheus, Grafana |
+| **Frontend** | TypeScript, React |
 
-## Connect
-
-[LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
+**[Connect on LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)**
