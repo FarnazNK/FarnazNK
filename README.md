@@ -1,10 +1,10 @@
 # Farnaz Nasehi
 
-## Backend & AI Systems Engineer
+## Full Stack Software Engineer | Python, React & Applied AI
 
-I build **secure backend services and grounded AI applications**, from authenticated APIs and databases to retrieval, tool use, evaluations, and observability.
+I build **full-stack applications, secure Python APIs, and grounded AI systems**—from React/TypeScript interfaces and database-backed services to retrieval, tool use, evaluations, and observability.
 
-**Focus:** Backend engineering · Applied AI/LLMs · Cloud infrastructure
+**Focus:** Full-stack engineering · Python backends · React/TypeScript · Applied AI
 
 [Featured work](#featured-projects) · [Skills](#technical-skills) · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
@@ -33,7 +33,7 @@ Portfolio intelligence system that applies grounded AI to authenticated financia
 - Document-retrieval prototype with ranked evidence and source citations
 - FastAPI services for JWT auth, PostgreSQL portfolio state, market-data adapters, AI orchestration, and retrieval
 - Optional Anthropic and Finnhub integrations with deterministic/offline fallbacks
-- React/TypeScript product surface, Dockerized services, automated tests, and GitHub Actions CI
+- React/TypeScript dashboard with Redux Toolkit and styled-components; Jest/React Testing Library, pytest, Docker, and GitHub Actions CI
 
 ### [SecureShop — Security-Focused Backend](https://github.com/FarnazNK/secureshop-ecommerce)
 
@@ -52,6 +52,6 @@ Production-style FastAPI e-commerce system demonstrating backend security and tr
 | **Backend** | Python, FastAPI, Django, Django REST Framework, Node.js, SQLAlchemy, PostgreSQL, MySQL, Redis |
 | **AI & LLMs** | Grounded agents, tool calling, context engineering, hybrid retrieval, pgvector, LLM evaluations, guardrails |
 | **Cloud & DevOps** | Docker, AWS Lambda/SAM, Terraform, GitHub Actions, Prometheus, Grafana |
-| **Frontend** | TypeScript, React |
+| **Frontend** | TypeScript, React, Redux Toolkit, styled-components, Jest, React Testing Library |
 
 **[Connect on LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)**
