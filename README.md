@@ -30,6 +30,14 @@ All three projects include an **optional, local Kubernetes (kind) reference setu
 | [FinVision](https://github.com/FarnazNK/finvision) | [Local cluster walkthrough](https://github.com/FarnazNK/finvision/blob/main/k8s/README.md) |
 | [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce) | [Local cluster walkthrough](https://github.com/FarnazNK/secureshop-ecommerce/blob/main/k8s/README.md) |
 
+## Monitoring & Observability — Prometheus + Grafana
+
+Optional **Prometheus and Grafana** monitoring is included with each project's free local Kubernetes setup. Prometheus scrapes API metrics, and Grafana is configured with a Prometheus data source. Metrics are accessible on local port-forwards, not public monitoring endpoints; no AWS or managed monitoring charges are required. CI validates monitoring manifests. These are documented portfolio examples, not cloud monitoring deployments.
+
+- [Grounded Agent monitoring](https://github.com/FarnazNK/grounded-agent-platform/blob/main/k8s/MONITORING.md)
+- [FinVision monitoring](https://github.com/FarnazNK/finvision/blob/main/k8s/MONITORING.md)
+- [SecureShop monitoring](https://github.com/FarnazNK/secureshop-ecommerce/blob/main/k8s/MONITORING.md)
+
 ## Featured Projects
 
 ### [Grounded Agent Platform — Retrieval, Tools, Evals & Guardrails](https://github.com/FarnazNK/grounded-agent-platform)
