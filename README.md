@@ -20,6 +20,16 @@ These projects demonstrate **AWS Bedrock, Strands Agents and AgentCore integrati
 
 Each repository contains offline security regression tests, CI checks and a portfolio walkthrough (`aws_agent/PORTFOLIO.md` or `aws_agentcore/PORTFOLIO.md`). The existing hosted applications are separate from these non-deployed AWS demos.
 
+## Kubernetes & Docker — Free Local Container Orchestration
+
+All three projects include an **optional, local Kubernetes (kind) reference setup** using the existing Docker-built images. The manifests define Deployments, internal Services, container resource limits, runtime-generated Secrets and local PostgreSQL storage. Each project provides an [installation walkthrough](https://github.com/FarnazNK/grounded-agent-platform/blob/main/k8s/README.md) and automated manifest validation in GitHub Actions. These are **portfolio development configurations**, not deployed public Kubernetes clusters. No AWS or paid cloud account required.
+
+| Project | Kubernetes guide |
+| --- | --- |
+| [Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform) | [Local cluster walkthrough](https://github.com/FarnazNK/grounded-agent-platform/blob/main/k8s/README.md) |
+| [FinVision](https://github.com/FarnazNK/finvision) | [Local cluster walkthrough](https://github.com/FarnazNK/finvision/blob/main/k8s/README.md) |
+| [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce) | [Local cluster walkthrough](https://github.com/FarnazNK/secureshop-ecommerce/blob/main/k8s/README.md) |
+
 ## Featured Projects
 
 ### [Grounded Agent Platform — Retrieval, Tools, Evals & Guardrails](https://github.com/FarnazNK/grounded-agent-platform)
@@ -65,7 +75,7 @@ Production-style FastAPI e-commerce system demonstrating backend security and tr
 | --- | --- |
 | **Backend** | Python, FastAPI, REST, GraphQL, gRPC, Protocol Buffers, Django, Django REST Framework, Node.js, SQLAlchemy, PostgreSQL, MySQL, Redis |
 | **AI & LLMs** | Grounded agents, tool calling, context engineering, hybrid retrieval, pgvector, LLM evaluations, guardrails |
-| **Cloud & DevOps** | Docker, AWS Lambda/SAM, Terraform, GitHub Actions, Prometheus, Grafana |
+| **Cloud & DevOps** | Docker, Kubernetes, kind, AWS Lambda/SAM, Terraform, GitHub Actions, Prometheus, Grafana |
 | **Frontend** | TypeScript, React, Redux Toolkit, styled-components, Jest, React Testing Library |
 
 **[Connect on LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)**
