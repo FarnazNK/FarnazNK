@@ -8,6 +8,18 @@ I build **full-stack applications, secure Python APIs, and grounded AI systems**
 
 [Featured work](#featured-projects) · [Skills](#technical-skills) · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
+## AWS AI Agent Portfolio — No Cloud Costs
+
+These projects demonstrate **AWS Bedrock, Strands Agents and AgentCore integration patterns** as **local, mock-tested reference implementations**. The AWS features are **opt-in and disabled by default**, so the demo requires no AWS account, API keys, or cloud spend. This is not a claim of live AWS deployment.
+
+| Project | Security-focused AI implementation | Free offline demo |
+| --- | --- | --- |
+| [Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform) | Read-only Strands agent, Bedrock Guardrails configuration, AgentCore runtime adapter, JWT- and workspace-scoped retrieval | `python aws_agent/demo_offline.py` |
+| [FinVision](https://github.com/FarnazNK/finvision) | JWT-scoped portfolio assistant with minimized holdings context, no trading permissions | `python aws_agentcore/demo_offline.py` |
+| [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce) | Read-only product-catalog assistant with no orders, payment or customer context | `python aws_agentcore/demo_offline.py` |
+
+Each repository contains offline security regression tests, CI checks and a portfolio walkthrough (`aws_agent/PORTFOLIO.md` or `aws_agentcore/PORTFOLIO.md`). The existing hosted applications are separate from these non-deployed AWS demos.
+
 ## Featured Projects
 
 ### [Grounded Agent Platform — Retrieval, Tools, Evals & Guardrails](https://github.com/FarnazNK/grounded-agent-platform)
