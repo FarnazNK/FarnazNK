@@ -31,6 +31,7 @@ Production-oriented grounded-agent system combining retrieval, constrained tool 
 - Repository-aware developer agent with bounded context selection and reusable skills
 - Policy-controlled tools for code search, file operations, and verification commands
 - Multi-tenant grounded retrieval with **PostgreSQL/pgvector**, lexical search, and hybrid ranking
+- Local gRPC/Protocol Buffers retrieval demo with workspace-scoped authentication, deadlines, and offline security tests (public API remains REST)
 - Explicit write opt-in, sensitive-path protection, prompt/context/output guardrails, and citation validation
 - Dedicated RAG, adversarial, developer-agent context, and latency evaluation gates in CI
 - Structured traces, Prometheus/Grafana observability, Docker, Terraform, and AWS deployment paths
@@ -44,6 +45,7 @@ Portfolio intelligence system that applies grounded AI to authenticated financia
 - Deterministic portfolio analytics exposed as tools for AI-assisted insights
 - Document-retrieval prototype with ranked evidence and source citations
 - FastAPI services for JWT auth, PostgreSQL portfolio state, market-data adapters, AI orchestration, and retrieval
+- Read-only **GraphQL** dashboard queries with JWT-scoped holdings, query bounds, and regression tests alongside the REST APIs
 - Optional Anthropic and Finnhub integrations with deterministic/offline fallbacks
 - React/TypeScript dashboard with Redux Toolkit and styled-components; Jest/React Testing Library, pytest, Docker, and GitHub Actions CI
 
@@ -61,7 +63,7 @@ Production-style FastAPI e-commerce system demonstrating backend security and tr
 
 | Focus | Technologies |
 | --- | --- |
-| **Backend** | Python, FastAPI, Django, Django REST Framework, Node.js, SQLAlchemy, PostgreSQL, MySQL, Redis |
+| **Backend** | Python, FastAPI, REST, GraphQL, gRPC, Protocol Buffers, Django, Django REST Framework, Node.js, SQLAlchemy, PostgreSQL, MySQL, Redis |
 | **AI & LLMs** | Grounded agents, tool calling, context engineering, hybrid retrieval, pgvector, LLM evaluations, guardrails |
 | **Cloud & DevOps** | Docker, AWS Lambda/SAM, Terraform, GitHub Actions, Prometheus, Grafana |
 | **Frontend** | TypeScript, React, Redux Toolkit, styled-components, Jest, React Testing Library |
