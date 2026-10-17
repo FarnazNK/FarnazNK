@@ -8,7 +8,7 @@ I build **full-stack applications, secure Python APIs, and grounded AI systems**
 
 [Featured work](#featured-projects) · [Skills](#technical-skills) · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
-## AWS AI Agent Portfolio — No Cloud Costs
+## AWS AI Agent Portfolio
 
 These projects demonstrate **AWS Bedrock, Strands Agents and AgentCore integration patterns** as **local, mock-tested reference implementations**. The AWS features are **opt-in and disabled by default**, so the demo requires no AWS account, API keys, or cloud spend. This is not a claim of live AWS deployment.
 
