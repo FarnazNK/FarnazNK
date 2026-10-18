@@ -1,6 +1,6 @@
 # Farnaz Nasehi
 
-## Full Stack Software Engineer | Python, React & Applied AI
+## Full Stack Software Engineer | Python & Applied AI
 
 I build **full-stack applications, secure Python APIs, and grounded AI systems**—from React/TypeScript interfaces and database-backed services to retrieval, tool use, evaluations, and observability.
 
