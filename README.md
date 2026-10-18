@@ -1,55 +1,38 @@
 # Farnaz Nasehi
+### Full-Stack Software Engineer · React / TypeScript · Python / FastAPI · Applied AI
 
-## Full-Stack Software Engineer · TypeScript, React, Python & Applied AI
+I build products end to end: accessible React interfaces, typed API integrations, secure Python services, PostgreSQL data models, and AI workflows with retrieval, tool use, evaluations, and guardrails.
 
-I build AI-powered products end to end: React/TypeScript interfaces, secure APIs, PostgreSQL data models, and LLM features grounded in real data, with retrieval, tool use, evaluations, and guardrails.
-
-[Featured work](#featured-projects) · [Skills](#technical-skills) · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
+**[Explore my projects](#featured-projects)** · **[Technical skills](#technical-skills)** · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
 ## Featured Projects
 
-### [Grounded Agent Platform: Document RAG & Agent Harness](https://github.com/FarnazNK/grounded-agent-platform)
+| Project | What I built | Try it |
+| --- | --- | --- |
+| **[Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform)** | Multi-tenant document RAG, hybrid pgvector retrieval, constrained developer-agent tools, evaluation gates, guardrails, and structured traces. **Python · FastAPI · PostgreSQL/pgvector · LLMs** | [API docs](https://grounded-agent-api.vercel.app/docs) |
+| **[FinVision](https://github.com/FarnazNK/finvision)** | Responsive portfolio dashboard, interactive performance and allocation charts, Redux state, authenticated portfolio APIs, and AI-assisted analysis using deterministic financial tools. **React · TypeScript · Redux Toolkit · FastAPI** | [Dashboard](https://farnaznk.github.io/finvision/) · [API](https://finvision-api.vercel.app/docs) |
+| **[SecureShop](https://github.com/FarnazNK/secureshop-ecommerce)** | Full-stack shopping experience with API-backed product discovery, search/filter/sort, cart and account flows, and a security-focused order backend. **React · TypeScript · Tailwind · FastAPI · PostgreSQL** | [Storefront](https://secureshop-storefront.vercel.app) · [API](https://secureshop-api.vercel.app/api/reference) |
 
-[Live API](https://grounded-agent-api.vercel.app/docs) · [Health](https://grounded-agent-api.vercel.app/health/live)
+### What these projects demonstrate
 
-A grounded-agent system combining document retrieval, constrained tool use, evaluation, and observability.
-
-- Multi-tenant document RAG with **PostgreSQL/pgvector**, full-text search, and hybrid ranking (reciprocal-rank fusion)
-- Workspace-scoped authorization, prompt/context/output guardrails, PII checks, and citation validation
-- Repository-aware developer agent with bounded context selection, policy-controlled tools, and explicit write opt-in
-- RAG, adversarial, agent-context, and latency evaluation gates in CI
-- Structured traces, Docker, Terraform, and AWS deployment paths
-
-### [FinVision: AI-Assisted Portfolio Dashboard](https://github.com/FarnazNK/finvision)
-
-[Dashboard](https://farnaznk.github.io/finvision/) · [Live API](https://finvision-api.vercel.app/docs)
-
-A full-stack portfolio app that uses AI on authenticated financial data without letting the LLM do the calculations.
-
-- **React/TypeScript** dashboard with Redux Toolkit and styled-components, tested with Jest and React Testing Library
-- FastAPI services for JWT auth, PostgreSQL portfolio state, market data, and AI orchestration
-- Deterministic portfolio analytics exposed to the LLM as tools
-- Document retrieval with ranked evidence and source citations
-- Anthropic and Finnhub integrations with offline fallbacks; Docker and GitHub Actions CI
-
-### [SecureShop: Full-Stack E-Commerce](https://github.com/FarnazNK/secureshop-ecommerce)
-
-[Storefront](https://secureshop-storefront.vercel.app) · [Live API](https://secureshop-api.vercel.app/api/reference)
-
-A **React/TypeScript** storefront on a security-focused FastAPI backend.
-
-- JWT auth, RBAC, refresh-token rotation with reuse detection
-- Rate limiting, security headers, explicit CORS, request IDs, and centralized errors
-- PostgreSQL with async SQLAlchemy, exact money handling, and order snapshots
-- Integration tests, Docker, and CI
-
-Each project also includes optional local Kubernetes manifests, Prometheus/Grafana monitoring, and mock-tested AWS Bedrock agent examples.
+- **Frontend product engineering:** React/TypeScript SPAs, routing, reusable components, responsive dashboards and catalog views, asynchronous API states, accessibility, and client-side state management.
+- **Backend and data ownership:** REST and read-only GraphQL APIs, Python/FastAPI, JWT authentication, authorization, SQLAlchemy, PostgreSQL, and database migrations.
+- **Applied AI engineering:** RAG, hybrid retrieval, pgvector, model tool calling, grounding/citations, policy-enforced agent execution, and regression evaluations.
+- **Reliability and delivery:** Jest/React Testing Library, pytest, CI quality gates, Docker, structured logging, and optional local Kubernetes monitoring.
 
 ## Technical Skills
 
-| Focus | Technologies |
+| Area | Technologies |
 | --- | --- |
-| **Frontend** | TypeScript, React, Redux Toolkit, styled-components, Jest, React Testing Library |
-| **Backend** | Python, FastAPI, Django REST Framework, REST, GraphQL, SQLAlchemy, PostgreSQL, Redis |
-| **AI & LLMs** | Anthropic/OpenAI APIs, tool calling, agent workflows, RAG, hybrid retrieval, pgvector, LLM evaluations, guardrails |
-| **DevOps** | Docker, Kubernetes, Azure CI/CD, GitHub Actions, Terraform, AWS |
+| **Frontend** | TypeScript, JavaScript, React, Vite, React Router, Redux Toolkit, React Query, Tailwind CSS, styled-components, Recharts, accessible UI |
+| **Backend** | Python, FastAPI, Django REST Framework, REST, GraphQL, Pydantic, SQLAlchemy, PostgreSQL, Redis |
+| **AI / LLM** | Anthropic and OpenAI APIs, RAG, hybrid search, pgvector, agent tools, prompt/context guardrails, evaluation pipelines |
+| **Testing / infrastructure** | Jest, React Testing Library, Vitest, pytest, GitHub Actions, Docker, Kubernetes (local), Terraform, AWS, Azure CI/CD |
+
+## Explore the code
+
+- **AI system design and evaluations:** [Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform)
+- **Data-heavy React dashboard and API integration:** [FinVision](https://github.com/FarnazNK/finvision)
+- **Real-world shopping flows and secure backend:** [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce)
+
+**Demo transparency:** Public deployments are demonstrations. Some market data is simulated, optional model/cloud integrations require configuration, and SecureShop does not process live payments. The project READMEs document implemented features and limitations.
