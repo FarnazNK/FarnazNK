@@ -52,4 +52,4 @@ Each project also includes optional local Kubernetes manifests, Prometheus/Grafa
 | **Frontend** | TypeScript, React, Redux Toolkit, styled-components, Jest, React Testing Library |
 | **Backend** | Python, FastAPI, Django REST Framework, REST, GraphQL, SQLAlchemy, PostgreSQL, Redis |
 | **AI & LLMs** | Anthropic/OpenAI APIs, tool calling, agent workflows, RAG, hybrid retrieval, pgvector, LLM evaluations, guardrails |
-| **DevOps** | Docker, Kubernetes, GitHub Actions, Terraform, AWS |
+| **DevOps** | Docker, Kubernetes, Azure CI/CD, GitHub Actions, Terraform, AWS |
