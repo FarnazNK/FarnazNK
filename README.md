@@ -52,6 +52,6 @@ Each project also includes optional local Kubernetes manifests, Prometheus/Grafa
 | **Frontend** | TypeScript, React, Redux Toolkit, styled-components, Jest, React Testing Library |
 | **Backend** | Python, FastAPI, Django REST Framework, REST, GraphQL, SQLAlchemy, PostgreSQL, Redis |
 | **AI & LLMs** | Anthropic/OpenAI APIs, tool calling, agent workflows, RAG, hybrid retrieval, pgvector, LLM evaluations, guardrails |
-| **DevOps** | Docker, GitHub Actions, Terraform, AWS, Prometheus, Grafana |
+| **DevOps** | Docker, Kubernetes, GitHub Actions, Terraform, AWS |
 
 **[Connect on LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)**
