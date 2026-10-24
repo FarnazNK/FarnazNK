@@ -1,38 +1,49 @@
-# Farnaz Nasehi
-### Full-Stack Software Engineer · React / TypeScript · Python / FastAPI · Applied AI
+# Hi, I'm Farnaz 👋
 
-I build products end to end: accessible React interfaces, typed API integrations, secure Python services, PostgreSQL data models, and AI workflows with retrieval, tool use, evaluations, and guardrails.
+### Full-Stack Engineer · React / TypeScript · Python / FastAPI · Applied AI
 
-**[Explore my projects](#featured-projects)** · **[Technical skills](#technical-skills)** · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
+📍 Calgary, AB · Open to remote roles · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
-## Featured Projects
+I build products end to end: fast, accessible React interfaces, secure Python APIs, PostgreSQL data models, and AI features that are grounded, tested and measured. Before this, I spent 4+ years building **scientific software**: WebGL/Three.js 3D visualization and data pipelines for geological and lab instrument data. I hold an **M.Sc. in Physics** from the University of Calgary.
 
-| Project | What I built | Try it |
-| --- | --- | --- |
-| **[Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform)** | Multi-tenant document RAG, hybrid pgvector retrieval, constrained developer-agent tools, evaluation gates, guardrails, and structured traces. **Python · FastAPI · PostgreSQL/pgvector · LLMs** | [API docs](https://grounded-agent-api.vercel.app/docs) |
-| **[FinVision](https://github.com/FarnazNK/finvision)** | Responsive portfolio dashboard, interactive performance and allocation charts, Redux state, authenticated portfolio APIs, and AI-assisted analysis using deterministic financial tools. **React · TypeScript · Redux Toolkit · FastAPI** | [Dashboard](https://farnaznk.github.io/finvision/) · [API](https://finvision-api.vercel.app/docs) |
-| **[SecureShop](https://github.com/FarnazNK/secureshop-ecommerce)** | Full-stack shopping experience with API-backed product discovery, search/filter/sort, cart and account flows, and a security-focused order backend. **React · TypeScript · Tailwind · FastAPI · PostgreSQL** | [Storefront](https://secureshop-storefront.vercel.app) · [API](https://secureshop-api.vercel.app/api/reference) |
+---
 
-### What these projects demonstrate
+## Featured projects
 
-- **Frontend product engineering:** React/TypeScript SPAs, routing, reusable components, responsive dashboards and catalog views, asynchronous API states, accessibility, and client-side state management.
-- **Backend and data ownership:** REST and read-only GraphQL APIs, Python/FastAPI, JWT authentication, authorization, SQLAlchemy, PostgreSQL, and database migrations.
-- **Applied AI engineering:** RAG, hybrid retrieval, pgvector, model tool calling, grounding/citations, policy-enforced agent execution, and regression evaluations.
-- **Reliability and delivery:** Jest/React Testing Library, pytest, CI quality gates, Docker, structured logging, and optional local Kubernetes monitoring.
+### 🧠 [Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform): applied AI
+Multi-tenant RAG API with **hybrid pgvector + full-text retrieval**, citation validation and layered guardrails, plus a developer agent whose tool use is **enforced by policy outside the model**. Every PR must pass RAG, adversarial, agent-context and latency **evaluation gates**.
+`Python` `FastAPI` `PostgreSQL/pgvector` `Anthropic/OpenAI` `CI eval gates`
+**[Live API docs](https://grounded-agent-api.vercel.app/docs)** · [Code](https://github.com/FarnazNK/grounded-agent-platform)
 
-## Technical Skills
+### 📊 [FinVision](https://github.com/FarnazNK/finvision): full-stack + AI
+Portfolio tracker with an animated **three.js** landing page, a responsive dashboard and an AI assistant that calls **5 deterministic analytics tools** instead of doing math itself, and cites them.
+`React` `TypeScript` `Redux Toolkit` `three.js` `FastAPI` `Anthropic tool use`
+**[Live website](https://farnaznk.github.io/finvision/)** · [Dashboard](https://farnaznk.github.io/finvision/app) · [Code](https://github.com/FarnazNK/finvision)
+
+<a href="https://farnaznk.github.io/finvision/"><img src="https://raw.githubusercontent.com/FarnazNK/finvision/main/docs/screenshots/landing.png" alt="FinVision landing page" width="720"></a>
+
+### 🔐 [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce): security-first e-commerce
+React storefront and FastAPI backend built around the OWASP Top 10: **refresh-token rotation with theft detection**, constant-time login, RBAC, rate limiting, exact-decimal money and Stripe payment intents.
+`React` `TypeScript` `Tailwind` `FastAPI` `PostgreSQL` `Stripe`
+**[Live storefront](https://secureshop-storefront.vercel.app)** · [API reference](https://secureshop-api.vercel.app/api/reference) · [Code](https://github.com/FarnazNK/secureshop-ecommerce)
+
+<a href="https://secureshop-storefront.vercel.app/products"><img src="https://raw.githubusercontent.com/FarnazNK/secureshop-ecommerce/main/docs/screenshots/catalog.png" alt="SecureShop catalog page" width="720"></a>
+
+---
+
+## Tech I use
 
 | Area | Technologies |
 | --- | --- |
-| **Frontend** | TypeScript, JavaScript, React, Vite, React Router, Redux Toolkit, React Query, Tailwind CSS, styled-components, Recharts, accessible UI |
-| **Backend** | Python, FastAPI, Django REST Framework, REST, GraphQL, Pydantic, SQLAlchemy, PostgreSQL, Redis |
-| **AI / LLM** | Anthropic and OpenAI APIs, RAG, hybrid search, pgvector, agent tools, prompt/context guardrails, evaluation pipelines |
-| **Testing / infrastructure** | Jest, React Testing Library, Vitest, pytest, GitHub Actions, Docker, Kubernetes (local), Terraform, AWS, Azure CI/CD |
+| **Frontend** | TypeScript, React, Vite, Redux Toolkit, React Query, Tailwind CSS, styled-components, Recharts, three.js / WebGL |
+| **Backend** | Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, REST, GraphQL, Redis, Django REST Framework |
+| **Applied AI** | Anthropic and OpenAI APIs, tool calling, RAG, hybrid search, pgvector, guardrails, evaluation pipelines |
+| **Quality & delivery** | Jest, React Testing Library, Vitest, Playwright, pytest, GitHub Actions, Docker, Terraform, AWS, Azure DevOps |
 
-## Explore the code
+## How I work
 
-- **AI system design and evaluations:** [Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform)
-- **Data-heavy React dashboard and API integration:** [FinVision](https://github.com/FarnazNK/finvision)
-- **Real-world shopping flows and secure backend:** [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce)
+- **Measure AI, don't trust it.** Evaluation gates in CI, citations that get checked, and models that call tools for the numbers.
+- **Security by default.** Least-privilege access, validated inputs, secrets that fail fast.
+- **Ship it and test it.** Every project here is live, has CI, and documents its limitations honestly.
 
-**Demo transparency:** Public deployments are demonstrations. Some market data is simulated, optional model/cloud integrations require configuration, and SecureShop does not process live payments. The project READMEs document implemented features and limitations.
+> All demos run on synthetic or simulated data. Each project's README explains exactly what's live and what isn't.
