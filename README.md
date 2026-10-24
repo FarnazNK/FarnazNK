@@ -1,6 +1,6 @@
 # Hi, I'm Farnaz 👋
 
-### Full-Stack Engineer · React / TypeScript · Python / FastAPI · Applied AI
+### Backend & AI Systems Engineer | Python · FastAPI · LLMs
 
 📍 Calgary, AB · Open to remote roles · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
