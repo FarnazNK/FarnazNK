@@ -4,7 +4,7 @@
 
 📍 Calgary, AB · Open to remote roles · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
-I build products end to end: fast, accessible React interfaces, secure Python APIs, PostgreSQL data models, and AI features that are grounded, tested and measured. Before this, I spent 4+ years building **scientific software**: WebGL/Three.js 3D visualization and data pipelines for geological and lab instrument data. I hold an **M.Sc. in Physics** from the University of Calgary.
+I build products end to end: fast, accessible React interfaces, secure Python APIs, PostgreSQL data models, and AI features that are grounded, tested and measured.
 
 ---
 
