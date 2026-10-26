@@ -34,7 +34,7 @@ React storefront and FastAPI backend built around the OWASP Top 10: **refresh-to
 | **Frontend** | TypeScript, React, Vite, Zustand, Zod, React Query, Tailwind CSS, styled-components, Recharts, three.js / WebGL |
 | **Backend** | Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, REST, GraphQL, Redis, Django REST Framework |
 | **Applied AI** | Anthropic and OpenAI APIs, tool calling, RAG, hybrid search, pgvector, guardrails, evaluation pipelines |
-| **Quality & delivery** | Jest, React Testing Library, Vitest, Playwright, pytest, GitHub Actions, Docker, Kubernetes, Terraform, AWS, Azure DevOps |
+| **Quality & delivery** | Jest, React Testing Library, Vitest, Playwright, pytest, GitHub Actions, Docker, Kubernetes, AWS, Azure DevOps |
 
 
 > All demos run on synthetic or simulated data. Each project's README explains exactly what's live and what isn't.
