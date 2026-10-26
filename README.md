@@ -2,7 +2,7 @@
 
 ### Backend & AI Systems Engineer | Python · FastAPI · LLMs
 
-📍 Calgary, AB · Open to remote roles · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
+📍 Calgary, AB · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
 I build products end to end: fast, accessible React interfaces, secure Python APIs, PostgreSQL data models, and AI features that are grounded, tested and measured.
 
@@ -36,10 +36,5 @@ React storefront and FastAPI backend built around the OWASP Top 10: **refresh-to
 | **Applied AI** | Anthropic and OpenAI APIs, tool calling, RAG, hybrid search, pgvector, guardrails, evaluation pipelines |
 | **Quality & delivery** | Jest, React Testing Library, Vitest, Playwright, pytest, GitHub Actions, Docker, Terraform, AWS, Azure DevOps |
 
-## How I work
-
-- **Measure AI, don't trust it.** Evaluation gates in CI, citations that get checked, and models that call tools for the numbers.
-- **Security by default.** Least-privilege access, validated inputs, secrets that fail fast.
-- **Ship it and test it.** Every project here is live, has CI, and documents its limitations honestly.
 
 > All demos run on synthetic or simulated data. Each project's README explains exactly what's live and what isn't.
