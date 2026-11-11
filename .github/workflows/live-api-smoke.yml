@@ -17,18 +17,37 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: FinVision API
+      # One curl config for every check. "location" follows redirects, so a check
+      # reaches the real app instead of passing on a redirect response alone.
+      - name: Configure curl
         run: |
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://finvision-api.onrender.com/
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://finvision-api.onrender.com/health
+          cat > ~/.curlrc <<'CURLRC'
+          fail
+          silent
+          show-error
+          location
+          retry = 3
+          retry-delay = 5
+          retry-all-errors
+          max-time = 60
+          output = /dev/null
+          write-out = "%{http_code} %{url_effective}\n"
+          CURLRC
 
-      - name: RAG Agent API
+      - name: FinVision API
+        if: always()
         run: |
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://rag-agent-api-2uau.onrender.com/
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://rag-agent-api-2uau.onrender.com/health/live
+          curl https://finvision-api.onrender.com/
+          curl https://finvision-api.onrender.com/health
+
+      - name: Grounded Agent API
+        if: always()
+        run: |
+          curl https://grounded-agent-api.vercel.app/health/live
+          curl https://grounded-agent-api.vercel.app/docs
 
       - name: SecureShop API
+        if: always()
         run: |
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://secureshop-api-zckt.onrender.com/
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://secureshop-api-zckt.onrender.com/api/v1/health
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://secureshop-api-zckt.onrender.com/api/v1/products
+          curl https://secureshop-api.vercel.app/api/v1/health
+          curl https://secureshop-api.vercel.app/api/v1/products
