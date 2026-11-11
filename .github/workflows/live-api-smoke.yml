@@ -12,30 +12,42 @@ on:
 permissions:
   contents: read
 
-# --location follows redirects, so each check reaches the real app rather than
-# passing on a redirect response alone.
-env:
-  CURL: curl --fail --silent --show-error --location --retry 3 --retry-delay 5 --retry-all-errors --max-time 60 -o /dev/null -w "%{http_code} %{url_effective}\n"
-
 jobs:
   verify-live-apis:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      # One curl config for every check. "location" follows redirects, so a check
+      # reaches the real app instead of passing on a redirect response alone.
+      - name: Configure curl
+        run: |
+          cat > ~/.curlrc <<'CURLRC'
+          fail
+          silent
+          show-error
+          location
+          retry = 3
+          retry-delay = 5
+          retry-all-errors
+          max-time = 60
+          output = /dev/null
+          write-out = "%{http_code} %{url_effective}\n"
+          CURLRC
+
       - name: FinVision API
         if: always()
         run: |
-          $CURL https://finvision-api.onrender.com/
-          $CURL https://finvision-api.onrender.com/health
+          curl https://finvision-api.onrender.com/
+          curl https://finvision-api.onrender.com/health
 
       - name: Grounded Agent API
         if: always()
         run: |
-          $CURL https://grounded-agent-api.vercel.app/health/live
-          $CURL https://grounded-agent-api.vercel.app/docs
+          curl https://grounded-agent-api.vercel.app/health/live
+          curl https://grounded-agent-api.vercel.app/docs
 
       - name: SecureShop API
         if: always()
         run: |
-          $CURL https://secureshop-api.vercel.app/api/v1/health
-          $CURL https://secureshop-api.vercel.app/api/v1/products
+          curl https://secureshop-api.vercel.app/api/v1/health
+          curl https://secureshop-api.vercel.app/api/v1/products
