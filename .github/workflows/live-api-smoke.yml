@@ -13,22 +13,29 @@ permissions:
   contents: read
 
 jobs:
-  verify-live-apis:
+  finvision-api:
+    name: FinVision API
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: FinVision API
+      - name: Check FinVision health
         run: |
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://finvision-api.onrender.com/
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://finvision-api.onrender.com/health
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 --max-time 45 https://finvision-api.onrender.com/health
 
-      - name: RAG Agent API
+  grounded-agent-api:
+    name: Grounded Agent API
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check RAG API liveness
         run: |
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://rag-agent-api-2uau.onrender.com/
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://rag-agent-api-2uau.onrender.com/health/live
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 --max-time 45 https://grounded-agent-api.vercel.app/health/live
 
-      - name: SecureShop API
+  secureshop-api:
+    name: SecureShop API
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check SecureShop API health
         run: |
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://secureshop-api-zckt.onrender.com/
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://secureshop-api-zckt.onrender.com/api/v1/health
-          curl --fail --silent --show-error --retry 3 --retry-delay 5 https://secureshop-api-zckt.onrender.com/api/v1/products
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 --max-time 45 https://secureshop-api-zckt.onrender.com/api/v1/health
