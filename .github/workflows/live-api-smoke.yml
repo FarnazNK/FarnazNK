@@ -38,4 +38,4 @@ jobs:
     steps:
       - name: Check SecureShop API health
         run: |
-          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 --max-time 45 https://secureshop-api-zckt.onrender.com/api/v1/health
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 --max-time 45 https://secureshop-api.vercel.app/api/v1/health
