@@ -2,7 +2,7 @@
 
 ### Backend & AI Systems Engineer | Python · FastAPI · LLMs
 
-📍 Calgary, AB · [LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
+[LinkedIn](https://www.linkedin.com/in/farnaz-nasehi/)
 
 I build products end to end: fast, accessible React interfaces, secure Python APIs, PostgreSQL data models, and AI features that are grounded, tested and measured.
 
