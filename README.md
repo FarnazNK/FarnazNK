@@ -16,12 +16,12 @@ Multi-tenant RAG API with **hybrid pgvector + full-text retrieval**, citation va
 **[Live demo](https://grounded-agent-web.vercel.app)** · [API docs](https://grounded-agent-api.vercel.app/docs) · [Code](https://github.com/FarnazNK/grounded-agent-platform)
 
 ### 📊 [FinVision](https://github.com/FarnazNK/finvision): full-stack + AI
-Portfolio tracker with an animated **three.js** landing page, a responsive dashboard and an AI assistant that calls **5 deterministic analytics tools** instead of doing math itself, and cites them. App state runs on a **Zustand** store, and every API response is validated at runtime with **Zod**. Ships as Docker images with **Kubernetes** manifests validated in CI.
-`React` `TypeScript` `Zustand` `Zod` `three.js` `FastAPI` `Docker` `Kubernetes` `Anthropic tool use`
+Portfolio tracker whose AI assistant **can't make up numbers**: it calls 5 deterministic analytics tools, and code checks every figure in the answer against the tool output and cites it. Advice, off-topic and prompt-injection requests are refused before the model runs, failures fall back to computed answers, and a **20-case eval set** runs in CI. The same tools are exposed to Claude Code and Cursor through an **MCP server**. React dashboard with real market prices, a three.js landing page, Zustand state and Zod-validated API contracts.
+`React` `TypeScript` `Zustand` `Zod` `three.js` `FastAPI` `Anthropic tool use` `MCP` `Evals`
 **[Live website](https://farnaznk.github.io/finvision/)** · [Dashboard](https://farnaznk.github.io/finvision/app) · [Code](https://github.com/FarnazNK/finvision)
 
 ### 🔐 [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce): security-first e-commerce
-React storefront and FastAPI backend built around the OWASP Top 10: **refresh-token rotation with theft detection**, constant-time login, RBAC, rate limiting, exact-decimal money and Stripe payment intents.
+React storefront and FastAPI backend built around the OWASP Top 10: **refresh-token rotation with theft detection**, constant-time login, RBAC and rate limiting. Checkout runs through **Stripe Checkout with a signature-verified webhook**, idempotent orders and race-safe stock that never oversells, tested under k6 load.
 `React` `TypeScript` `Tailwind` `FastAPI` `PostgreSQL` `Stripe`
 **[Live storefront](https://secureshop-storefront.vercel.app)** · [API reference](https://secureshop-api.vercel.app/api/reference) · [Code](https://github.com/FarnazNK/secureshop-ecommerce)
 
