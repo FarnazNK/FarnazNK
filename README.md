@@ -11,17 +11,31 @@ I build products end to end: fast, accessible React interfaces, secure Python AP
 ## Featured projects
 
 ### 🧠 [Grounded Agent Platform](https://github.com/FarnazNK/grounded-agent-platform): applied AI
-Multi-tenant RAG API with **hybrid pgvector + full-text retrieval**, citation validation and layered guardrails, plus a developer agent whose tool use is **enforced by policy outside the model**. Every PR must pass RAG, adversarial, agent-context and latency **evaluation gates**. Hardened for multi-replica deployment: rate limits and cache shared through Redis/Valkey, a structured **audit trail** of who saw which documents (query text never logged), strict JWT validation, security headers, and CodeQL and Bandit in CI. The live demo traces each question through the whole pipeline: guardrails, hybrid search, rank fusion, grounding and output checks.
+A multi-tenant RAG API that answers only from your documents, cites them, and refuses when the evidence isn't there.
+- **Retrieval:** hybrid pgvector + full-text search with rank fusion, citation validation and layered guardrails
+- **Quality gates:** every PR must pass RAG, adversarial, agent-context and latency evaluations in CI
+- **Security:** workspace isolation, rate limits shared across replicas (Redis/Valkey), and an audit trail of which documents each user saw
+- **Developer agent:** tool use enforced by policy in code, not by the prompt
+
 `Python` `FastAPI` `PostgreSQL/pgvector` `Redis/Valkey` `React` `TypeScript` `Anthropic/OpenAI` `CI eval gates`
 **[Live demo](https://grounded-agent-web.vercel.app)** · [API docs](https://grounded-agent-api.vercel.app/docs) · [Code](https://github.com/FarnazNK/grounded-agent-platform)
 
 ### 📊 [FinVision](https://github.com/FarnazNK/finvision): full-stack + AI
-Portfolio tracker whose AI assistant **can't make up numbers**: it calls 5 deterministic analytics tools, and code checks every figure in the answer against the tool output and cites it. Advice, off-topic and prompt-injection requests are refused before the model runs, failures fall back to computed answers, and a **20-case eval set** runs in CI. **Customer figures never reach the model provider**: balances, weights and transactions are replaced with placeholders before the model sees them, and the server inserts the real values afterwards (a leak test checks every request: 38 values sent before, 0 now). The demo's market data comes from a **correlated price model** (geometric Brownian motion with Cholesky-correlated returns and mean-reverting intraday ticks), with statistical tests checking that realized volatilities and correlations match their targets. The same tools are exposed to Claude Code and Cursor through an **MCP server**.
-`React` `TypeScript` `Zustand` `Zod` `three.js` `FastAPI` `Anthropic tool use` `Privacy by design` `MCP` `Evals`
+A portfolio tracker whose AI assistant can't make up numbers, and never sees the customer's.
+- **Verified answers:** the model calls 5 deterministic analytics tools; code checks every figure in the answer and cites where it came from
+- **Privacy by design:** balances and transactions become placeholders before anything reaches the model provider (leak test: 38 values sent before, 0 now)
+- **Quant-grade simulation:** correlated geometric Brownian motion (Cholesky) with mean-reverting intraday ticks, statistically tested
+- **Agent-ready:** the same tools are exposed to Claude Code and Cursor through an MCP server; a 20-case eval set runs in CI
+
+`React` `TypeScript` `Zustand` `Zod` `three.js` `FastAPI` `Anthropic tool use` `MCP` `Evals`
 **[Live website](https://farnaznk.github.io/finvision/)** · [Dashboard](https://farnaznk.github.io/finvision/app) · [Code](https://github.com/FarnazNK/finvision)
 
 ### 🔐 [SecureShop](https://github.com/FarnazNK/secureshop-ecommerce): security-first e-commerce
-React storefront and FastAPI backend built around the OWASP Top 10: **refresh-token rotation with theft detection**, constant-time login, RBAC and rate limiting. Checkout runs through **Stripe Checkout with a signature-verified webhook**, idempotent orders and race-safe stock that never oversells, tested under k6 load.
+A React storefront and FastAPI backend built around the OWASP Top 10.
+- **Auth:** refresh-token rotation with theft detection, constant-time login, RBAC and rate limiting
+- **Payments:** Stripe Checkout with a signature-verified webhook and idempotent orders
+- **Inventory:** race-safe stock that never oversells, tested under k6 load
+
 `React` `TypeScript` `Tailwind` `FastAPI` `PostgreSQL` `Stripe`
 **[Live storefront](https://secureshop-storefront.vercel.app)** · [API reference](https://secureshop-api.vercel.app/api/reference) · [Code](https://github.com/FarnazNK/secureshop-ecommerce)
 
